@@ -1,0 +1,132 @@
+/* ===== 个人中心页面样式 ===== */
+
+.profile-page {
+  /* 底部额外留白以适应 tabBar 高度 */
+  padding-bottom: 160px;
+}
+
+/* ----- 用户信息卡片（渐变 hero）----- */
+.profile-hero {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 24px;
+  padding: 32px 28px;
+  color: var(--c-white);
+  /* 渐变写 background-image 而非 background 简写，避免 Skyline 渲染 bug */
+  background-image: linear-gradient(135deg, var(--c-primary) 0%, var(--c-primary-light) 50%, var(--c-blue-light) 100%);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+/* 装饰性光晕（右上 + 左下） */
+.profile-hero::before {
+  content: '';
+  position: absolute;
+  top: -36px;
+  right: -32px;
+  width: 140px;
+  height: 140px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.profile-hero::after {
+  content: '';
+  position: absolute;
+  bottom: -48px;
+  left: -36px;
+  width: 110px;
+  height: 110px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* hero 内部内容置于装饰层之上 */
+.profile-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* 头像 + 姓名 + 学院 横排 */
+.profile-hero__head {
+  display: flex;
+  align-items: center;
+}
+
+.profile-hero__info {
+  flex: 1;
+  margin-left: 24px;
+  min-width: 0;
+}
+
+.profile-hero__name {
+  display: block;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.profile-hero__college {
+  display: block;
+  margin-top: 6px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 26px;
+  line-height: 1.4;
+}
+
+/* ----- 三列统计数据 ----- */
+.profile-hero__stats {
+  display: flex;
+  margin-top: 28px;
+  padding-top: 24px;
+  /* 上半透明白色分割线 */
+  border-top: 1PX solid rgba(255, 255, 255, 0.28);
+}
+
+.profile-stat {
+  flex: 1;
+  text-align: center;
+}
+
+.profile-stat__value {
+  display: block;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.profile-stat__label {
+  display: block;
+  margin-top: 6px;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 22px;
+}
+
+/* ----- 区块标题 ----- */
+.profile-section {
+  margin: 8px 0 16px 8px;
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--c-gray-4);
+}
+
+/* ----- 退出登录按钮 ----- */
+.profile-logout-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 96px;
+}
+
+.profile-logout-text {
+  font-size: 30px;
+  color: var(--c-danger);
+  font-weight: 500;
+}
+
+/* 点击态反馈（weapp 不支持 :hover，用 :active） */
+.profile-logout-card:active {
+  opacity: 0.6;
+}

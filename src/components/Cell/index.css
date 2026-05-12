@@ -1,0 +1,33 @@
+/* Cell 列表项样式 */
+.cell {
+  display: flex;
+  align-items: center;
+  height: 88px;
+}
+
+.cell__icon {
+  flex-shrink: 0;
+  margin-right: 20px;
+  font-size: 36px;
+  line-height: 1;
+}
+
+.cell__title {
+  flex: 1;
+  font-size: 30px;
+  color: var(--c-text);
+}
+
+.cell__arrow {
+  flex-shrink: 0;
+  margin-left: 16px;
+  font-size: 28px;
+  color: var(--c-gray-1);
+}
+
+/* CellGroup 分割线 */
+.cell-group__divider {
+  height: 1PX; /* 大写 PX = 真·1物理像素 */
+  margin: 0;
+  background: var(--c-line);
+}

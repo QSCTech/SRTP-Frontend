@@ -1,0 +1,88 @@
+/* ===== 约球系统 · 全局样式 ===== */
+
+/* ----- 色彩系统（青色主题）----- */
+page {
+  /* 主题青 */
+  --c-primary: #22B5AF;
+  --c-primary-light: #57CDC8;
+  --c-primary-bg: #EDFFFB;
+
+  /* 灰阶 */
+  --c-gray-1: #94959B;
+  --c-gray-2: #EAEAEA;
+  --c-gray-3: #FAFAFA;
+  --c-gray-4: #808080;
+
+  /* 橙色辅助 */
+  --c-orange: #FF782A;
+  --c-orange-light: #FF975B;
+  --c-orange-bg: #FFF6F1;
+
+  /* 黄色辅助 */
+  --c-yellow: #FFB001;
+  --c-yellow-light: #FFCB5E;
+  --c-yellow-bg: #FFFAF0;
+
+  /* 蓝色辅助 */
+  --c-blue: #4874FA;
+  --c-blue-light: #6A8FFF;
+  --c-blue-bg: #F1F5FF;
+
+  /* 危险色 */
+  --c-danger: #F5523B;
+
+  /* 文字 */
+  --c-text: #1F2329;
+  --c-text-secondary: #646A73;
+  --c-text-placeholder: #94959B;
+
+  /* 线条与背景 */
+  --c-line: #EAEAEA;
+  --c-page: #FAFAFA;
+  --c-white: #FFFFFF;
+
+  /* 圆角 */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  /* 阴影 */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 8px 24px rgba(34, 181, 175, 0.10);
+
+  /* 字体 */
+  --font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+
+  /* 页面底色 */
+  background: var(--c-page);
+  color: var(--c-text);
+  font-family: var(--font-family);
+  font-size: 28px;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+/* ----- 全局重置 ----- */
+view,
+scroll-view,
+text,
+image,
+button,
+input,
+textarea {
+  box-sizing: border-box;
+}
+
+/* 干掉 button 自带边框 */
+button::after {
+  border: none;
+}
+
+/* ----- 页面外壳（统一样式）----- */
+.page-shell {
+  min-height: 100vh;
+  padding: 24px 24px 140px; /* 底部留出 tabBar 高度 */
+  background: var(--c-page);
+}
