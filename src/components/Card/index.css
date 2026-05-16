@@ -1,0 +1,9 @@
+/* Card 容器：白底 + 大圆角 + 轻阴影 */
+.card {
+  margin-bottom: 24px;
+  padding: 24px 28px;
+  background: var(--c-white);
+  border: 1PX solid var(--c-line); /* 1PX 大写避免被 pxtransform 转换 */
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
