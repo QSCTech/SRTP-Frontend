@@ -474,3 +474,149 @@
     width: 100%;
   }
 }
+/* pages/index/index.css */
+.container {
+  padding: 30rpx;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40rpx;
+}
+
+.header .title {
+  font-size: 36rpx;
+  font-weight: 700;
+  display: block;
+}
+
+.header .subtitle {
+  font-size: 28rpx;
+  color: #ff782a;
+}
+
+/* 搜索栏 */
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30rpx;
+  padding: 0 20rpx;
+}
+
+.search-bar .search-input {
+  flex: 1;
+  height: 70rpx;
+  background: #fff;
+  border-radius: 35rpx;
+  padding: 0 30rpx;
+  font-size: 28rpx;
+  border: 1rpx solid #e0e0e0;
+}
+
+.search-bar .clear-btn {
+  margin-left: 20rpx;
+  background-color: #f5f5f5;
+  color: #666;
+  border: none;
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size: 28rpx;
+}
+
+/* 房间列表 */
+.room-list {
+}
+
+.room-list .room-item {
+  background: #57CDC8;
+  border-radius: 16rpx;
+  padding: 30rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0,0,0,0.05);
+}
+
+.room-list .room-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 20rpx;
+}
+
+.room-list .room-name {
+  font-size: 32rpx;
+  font-weight: 500;
+}
+
+.room-list .room-status {
+  font-size: 24rpx;
+  color: #ff782a;
+}
+
+.room-list .room-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28rpx;
+  color: gray;
+}
+
+.room-list .join-btn {
+  background-color: #07c160;
+  color: #fff;
+  border: none;
+  padding: 0 20rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size: 28rpx;
+}
+
+/* 标签滚动区域 */
+.tags-scroll {
+  white-space: nowrap;
+  margin-bottom: 20rpx;
+  padding: 0 30rpx;
+}
+
+.tags-container {
+  display: inline-flex;
+  gap: 20rpx;
+}
+
+.tag-item {
+  display: inline-block;
+  padding: 12rpx 24rpx;
+  background-color: #f0f0f0;
+  border-radius: 40rpx;
+  font-size: 28rpx;
+  color: #333;
+  transition: all 0.2s;
+}
+
+.tag-active {
+  background-color: #07c160;
+  color: #fff;
+}
+
+.tag-text {
+  font-size: 28rpx;
+}
+
+/* 房间运动类型标签 */
+.room-sport {
+  background-color: #e8f5e9;
+  padding: 4rpx 12rpx;
+  border-radius: 20rpx;
+  font-size: 24rpx;
+  color: #2e7d32;
+  margin-left: 20rpx;
+}
+
+/* 空状态提示 */
+.empty-tip {
+  text-align: center;
+  padding: 100rpx 0;
+  color: #999;
+  font-size: 28rpx;
+}
