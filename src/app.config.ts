@@ -22,6 +22,30 @@ export default defineAppConfig({
       { pagePath: 'pages/create/index', text: '发起' },
       { pagePath: 'pages/matches/index', text: '比赛' },
       { pagePath: 'pages/profile/index', text: '我的' }
+    'pages/index/index',
+    'pages/profile/profile',
+    'pages/room-detail/room-detail'
+  ],
+  window: {
+    backgroundTextStyle: 'light',
+    navigationBarBackgroundColor: '#22B5AF',
+    navigationBarTitleText: '组队大厅',
+    navigationBarTextStyle: 'white'
+  },
+  tabBar: {
+    color: '#808080',
+    selectedColor: '#22B5AF',
+    backgroundColor: '#FFFFFF',
+    borderStyle: 'white',
+    list: [
+      {
+        pagePath: 'pages/index/index',
+        text: '组队'
+      },
+      {
+        pagePath: 'pages/profile/profile',
+        text: '我的'
+      }
     ]
   }
 })

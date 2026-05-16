@@ -85,4 +85,10 @@ button::after {
   min-height: 100vh;
   padding: 24px 24px 140px; /* 底部留出 tabBar 高度 */
   background: var(--c-page);
+page {
+  background: #fafafa;
+}
+
+button {
+  padding: 0;
 }
